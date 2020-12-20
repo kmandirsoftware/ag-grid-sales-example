@@ -13,6 +13,12 @@ campaignGridOptions = {
       });
     });
   },
+  defaultColDef: {
+    flex: 1,
+    minWidth: 150,
+    sortable: true,
+    resizable: true,
+  },    
   sideBar: 'columns',
 };
 
@@ -37,8 +43,9 @@ function getCampaignColumnHeader(agGrid){
     campaignGridOptions.api.setColumnDefs( mycolumn );
     campaignGridOptions.columnApi.applyColumnState({
       state: [
-        {colId: 'product', rowGroup: true, enableRowGroup: true},
+        {colId: 'product', rowGroup: true},
         {colId: 'reportingCategoryName', pivot: true, enablePivot: true},
+        {colId: 'campaignPositionCode', pivot: true, rowGroup: true, enableRowGroup: true}
       ],
       defaultState: {
         pivot: false,

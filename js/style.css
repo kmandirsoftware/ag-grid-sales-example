@@ -5,7 +5,20 @@
             box-sizing: border-box;
             -webkit-overflow-scrolling: touch;
         }
-        
+
+        html {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0;
+            overflow: auto;
+        }
+        body {
+            padding: 1rem;
+            overflow: auto;
+        }
+
+
 .tab-content.active{
     display: block;
     height: 100%;
