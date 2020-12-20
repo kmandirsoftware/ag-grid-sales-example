@@ -27,9 +27,9 @@
         		<span>&nbsp;</span>
     		</button>
     		<div class="collapse navbar-collapse" id="main-nav">
-              <ul>
+              <ul class="nav nav-tabs">
                 <li class="active">
-                    <a href="/">Programs</a>
+                    <a href="#page1">Programs</a>
                 </li>
                 <li class="">
                     <a href="#page2">Documentation</a>
@@ -46,17 +46,19 @@
     		</div>
 		</nav>
 		</header>
-		<div id="page2" class="page">[page2 content]
+		<div id="page2" class="tab-content hide">[page2 content]
 		   <div id="CampaignGrid" class="ag-theme-alpine" style="height: 100%;"></div>
 		</div>
-		<div id="page3" class="page">[page3 content]</div>
-		<div id="page4" class="page">[page4 content]</div>
+		<div id="page3" class="tab-content hide">[page3 content]</div>
+		<div id="page4" class="tab-content hide">[page4 content]</div>
 
-		<div id="page1" class="page default" style="height: 100%;">
+		<div id="page1" class="tab-content active" style="height: 100%;">
 	   		<button onclick="getSelectedRows()">Get Selected Rows</button>
 	   		<div id="myGrid" class="ag-theme-alpine" style="height: 100%;"></div>
 	   	</div>
-	   <script src="https://unpkg.com/@ag-grid-enterprise/all-modules@24.1.0/dist/ag-grid-enterprise.min.js"></script>
+	   <!-- <script src="https://unpkg.com/@ag-grid-enterprise/all-modules@24.1.0/dist/ag-grid-enterprise.min.js"></script>-->
+	   <script src="ag-grid-enterprise.min.js"></script>
+	   <script src="jquery-1.8.3.min.js "></script>
 	   <script src="main.js"></script>
 	</body>
 </html>
