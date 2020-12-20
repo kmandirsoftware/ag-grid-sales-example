@@ -1,39 +1,16 @@
-        html, body {
+     html, body {
             height: 100%;
             width: 100%;
             margin: 0;
             box-sizing: border-box;
             -webkit-overflow-scrolling: touch;
         }
+        
+.tab-content.active{
+    display: block;
+    height: 100%;
+}
 
-        html {
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 0;
-            overflow: auto;
-        }
-
-        body {
-            padding: 1rem;
-            overflow: auto;
-        }
-.page, :target ~ .default {
+.tab-content.hide{
     display: none;
 }
-
-.default, :target {
-    display: block;
-}
-    section:not(:target):not(#home),
-    section:target ~ #home {
-        display: none
-    }
-
-.tab-content.active{
-                display: block;
-            }
-
-            .tab-content.hide{
-                display: none;
-            }

@@ -1,4 +1,5 @@
 const programdetailRoutes = require('./programdetails')
+const campaignRoutes = require('./campaign')
 
 const appRouter = (app, mysql, fs) => {
 
@@ -9,6 +10,7 @@ const appRouter = (app, mysql, fs) => {
     });
 
     programdetailRoutes(app, mysql, fs);
+    campaignRoutes(app, fs);
 };
 
 module.exports = appRouter;
